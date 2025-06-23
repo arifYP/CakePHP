@@ -70,3 +70,37 @@ Visit your app in the browser:
 ```
 http://localhost:8765
 ```
+
+# Step-by-Step MySQL Shell Access Command (XAMPP)
+
+🔹 **1. Open Git Bash or MobaXterm**  
+Navigate to your MySQL folder (XAMPP default path):
+
+```bash
+cd /c/xampp/mysql/bin
+```
+### 🔹 2. Access MySQL Shell
+```
+./mysql -u root -p
+```
+### 🔹 3. List All Databases
+```
+SHOW DATABASES;
+```
+### 🔹 4. Use a Database
+For example, if your database is named cakephp_app:
+```
+USE cakephp_app;
+```
+### 🔹 5. Show All Tables
+```
+SHOW TABLES;
+```
+Table details For 'students' table:
+```
+select * from students;
+```
+### 🔹 6. Exit MySQL
+```
+exit
+```
